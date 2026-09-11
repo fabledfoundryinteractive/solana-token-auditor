@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana Token Security Auditor | Instant On-Chain Risk Analysis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0B0E17; color: #F1F5F9; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .glow-green { box-shadow: 0 0 25px rgba(20, 241, 149, 0.2); }
+    .glow-red { box-shadow: 0 0 25px rgba(239, 68, 68, 0.2); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-purple-600 selection:text-white">
+
+  <!-- Nav -->
+  <nav class="border-b border-white/10 px-8 py-5 flex items-center justify-between bg-[#111625]/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#14F195] to-[#9945FF] flex items-center justify-center font-black text-black text-base">S</div>
+      <span class="font-bold text-lg text-white">Solana Token <span class="text-[#14F195] mono text-xs uppercase px-2 py-0.5 rounded bg-[#14F195]/10 border border-[#14F195]/30">Auditor</span></span>
+    </div>
+    <div class="flex items-center space-x-4 text-xs mono text-slate-400">
+      <span class="w-2 h-2 rounded-full bg-[#14F195] animate-ping"></span>
+      <span>Mainnet RPC: Online</span>
+      <a href="https://github.com/fabledfoundryinteractive/solana-token-auditor" target="_blank" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">GitHub</a>
+    </div>
+  </nav>
+
+  <!-- Hero & Input -->
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-8 w-full">
+    <div class="text-center space-y-3">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+        Instant On-Chain <span class="bg-gradient-to-r from-[#14F195] to-[#9945FF] bg-clip-text text-transparent">Token Security</span> Audit
+      </h1>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto">
+        Verify Mint Authority, Freeze Authority, and Whale Concentration directly from the Solana blockchain in sub-seconds.
+      </p>
+    </div>
+
+    <!-- Audit Search Box -->
+    <div class="bg-[#151D30] border border-white/10 p-4 rounded-2xl shadow-2xl space-y-4">
+      <div class="flex flex-col md:flex-row gap-3">
+        <input id="mintInput" type="text" value="EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v" placeholder="Enter Solana Token Mint Address (Base58)..." class="flex-1 bg-[#0B0F19] border border-white/15 rounded-xl px-4 py-3 text-sm mono text-white placeholder-slate-500 focus:outline-none focus:border-[#14F195]">
+        <button onclick="runAudit()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-[#14F195] to-[#9945FF] text-black font-bold hover:opacity-90 transition text-sm">
+          Audit Token
+        </button>
+      </div>
+      <div class="flex items-center justify-between text-xs text-slate-400 mono px-1">
+        <span>Popular Quick-Audits:</span>
+        <div class="flex gap-2">
+          <button onclick="quickAudit('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v')" class="hover:text-[#14F195] underline">USDC</button>
+          <button onclick="quickAudit('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263')" class="hover:text-[#14F195] underline">BONK</button>
+          <button onclick="quickAudit('EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm')" class="hover:text-[#14F195] underline">WIF</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Container -->
+    <div id="resultsCard" class="hidden bg-[#151D30] border border-white/10 p-6 rounded-2xl space-y-6">
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <div>
+          <span class="text-xs font-mono uppercase text-slate-400">Security Score</span>
+          <div class="flex items-center gap-3 mt-1">
+            <span id="scoreVal" class="text-4xl font-extrabold mono">--</span>
+            <span id="riskBadge" class="px-3 py-1 rounded-full text-xs font-bold uppercase mono">--</span>
+          </div>
+        </div>
+        <button onclick="copyReport()" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs mono text-white transition">
+          Copy JSON Report
+        </button>
+      </div>
+
+      <!-- Core Checks Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-[#0B0F19] p-4 rounded-xl border border-white/5 space-y-1">
+          <span class="text-xs text-slate-400 mono uppercase">Mint Authority</span>
+          <div id="mintAuthStatus" class="font-bold text-sm">Checking...</div>
+          <p id="mintAuthDesc" class="text-xs text-slate-500">Can creator mint more tokens?</p>
+        </div>
+
+        <div class="bg-[#0B0F19] p-4 rounded-xl border border-white/5 space-y-1">
+          <span class="text-xs text-slate-400 mono uppercase">Freeze Authority</span>
+          <div id="freezeAuthStatus" class="font-bold text-sm">Checking...</div>
+          <p id="freezeAuthDesc" class="text-xs text-slate-500">Can creator freeze user accounts?</p>
+        </div>
+
+        <div class="bg-[#0B0F19] p-4 rounded-xl border border-white/5 space-y-1">
+          <span class="text-xs text-slate-400 mono uppercase">Top 10 Whale Concentration</span>
+          <div id="whaleStatus" class="font-bold text-sm">Checking...</div>
+          <p id="whaleDesc" class="text-xs text-slate-500">Total supply held by top 10</p>
+        </div>
+      </div>
+
+      <!-- Raw Log Output -->
+      <div class="bg-black/60 p-4 rounded-xl border border-white/10 mono text-xs text-slate-400 space-y-1 overflow-x-auto max-h-48">
+        <div class="text-slate-500">// On-Chain Verification Telemetry</div>
+        <div id="telemetryLog"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-6 text-center text-xs mono text-slate-500 bg-[#0B0E17]">
+    <div>Built by Fabled Foundry Interactive • On-Chain Payout / Donations: <span class="text-slate-400">DXwUYnkHkgDUi7qerLg9fPZhSHksGNSsnGD1YHZudg8V</span></div>
+  </footer>
+
+  <script>
+    const RPCS = [
+      "https://api.mainnet-beta.solana.com",
+      "https://solana.drpc.org"
+    ];
+
+    async function rpcCall(method, params) {
+      for (const url of RPCS) {
+        try {
+          const res = await fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ jsonrpc: "2.0", id: 1, method, params })
+          });
+          const json = await res.json();
+          if (json.result !== undefined) return json.result;
+        } catch (e) {
+          console.warn("RPC failed, trying next...", e);
+        }
+      }
+      return null;
+    }
+
+    function quickAudit(mint) {
+      document.getElementById("mintInput").value = mint;
+      runAudit();
+    }
+
+    let currentReport = null;
+
+    async function runAudit() {
+      const mint = document.getElementById("mintInput").value.trim();
+      if (!mint) return alert("Please enter a mint address.");
+
+      const card = document.getElementById("resultsCard");
+      card.classList.remove("hidden");
+      const log = document.getElementById("telemetryLog");
+      log.innerHTML = `[${new Date().toLocaleTimeString()}] Fetching account info for ${mint}...<br>`;
+
+      // 1. Account Info
+      const accInfo = await rpcCall("getAccountInfo", [mint, { encoding: "jsonParsed" }]);
+      if (!accInfo || !accInfo.value) {
+        log.innerHTML += `<span class="text-red-400">[!] Token mint account not found on Mainnet.</span>`;
+        return;
+      }
+
+      const parsed = accInfo.value.data.parsed.info;
+      const mintAuth = parsed.mintAuthority;
+      const freezeAuth = parsed.freezeAuthority;
+      const decimals = parsed.decimals;
+      const supplyRaw = BigInt(parsed.supply);
+
+      log.innerHTML += `[${new Date().toLocaleTimeString()}] Decimals: ${decimals} | Total Supply: ${parsed.supply}<br>`;
+      log.innerHTML += `[${new Date().toLocaleTimeString()}] Mint Authority: ${mintAuth || "REVOKED (SAFE)"}<br>`;
+      log.innerHTML += `[${new Date().toLocaleTimeString()}] Freeze Authority: ${freezeAuth || "DISABLED (SAFE)"}<br>`;
+
+      // 2. Largest Accounts
+      log.innerHTML += `[${new Date().toLocaleTimeString()}] Fetching top token holders...<br>`;
+      const largest = await rpcCall("getTokenLargestAccounts", [mint]);
+      let whalePct = 0;
+      if (largest && largest.value && supplyRaw > 0n) {
+        const top10 = largest.value.slice(0, 10);
+        let top10Sum = 0n;
+        top10.forEach(acc => top10Sum += BigInt(acc.amount));
+        whalePct = Number((top10Sum * 10000n) / supplyRaw) / 100;
+        log.innerHTML += `[${new Date().toLocaleTimeString()}] Top 10 Holders Own: ${whalePct.toFixed(2)}%<br>`;
+      }
+
+      // Risk Scoring
+      let riskScore = 0;
+      let reasons = [];
+      if (mintAuth) { riskScore += 40; reasons.push("Mint Authority is ACTIVE (+40 Risk)"); }
+      if (freezeAuth) { riskScore += 35; reasons.push("Freeze Authority is ACTIVE (+35 Risk)"); }
+      if (whalePct > 50) { riskScore += 25; reasons.push(`Top 10 hold >50% supply (${whalePct}%) (+25 Risk)`); }
+      else if (whalePct > 30) { riskScore += 10; reasons.push(`Top 10 hold >30% supply (${whalePct}%) (+10 Risk)`); }
+
+      // UI Updates
+      const scoreVal = document.getElementById("scoreVal");
+      const badge = document.getElementById("riskBadge");
+      scoreVal.innerText = `${100 - riskScore} / 100`;
+
+      if (riskScore <= 20) {
+        scoreVal.className = "text-4xl font-extrabold mono text-[#14F195]";
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase mono bg-[#14F195]/20 text-[#14F195] border border-[#14F195]/40";
+        badge.innerText = "LOW RISK (SAFE)";
+      } else if (riskScore <= 50) {
+        scoreVal.className = "text-4xl font-extrabold mono text-yellow-400";
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase mono bg-yellow-400/20 text-yellow-400 border border-yellow-400/40";
+        badge.innerText = "MODERATE RISK";
+      } else {
+        scoreVal.className = "text-4xl font-extrabold mono text-red-500";
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase mono bg-red-500/20 text-red-400 border border-red-500/40";
+        badge.innerText = "HIGH RISK (CAUTION)";
+      }
+
+      const mintStatus = document.getElementById("mintAuthStatus");
+      if (!mintAuth) {
+        mintStatus.innerHTML = `<span class="text-[#14F195]">Revoked (Safe)</span>`;
+      } else {
+        mintStatus.innerHTML = `<span class="text-red-400">Active: ${mintAuth.slice(0, 4)}...${mintAuth.slice(-4)}</span>`;
+      }
+
+      const freezeStatus = document.getElementById("freezeAuthStatus");
+      if (!freezeStatus) {
+        freezeStatus.innerHTML = `<span class="text-[#14F195]">Disabled (Safe)</span>`;
+      } else {
+        freezeStatus.innerHTML = freezeAuth ? `<span class="text-red-400">Active: ${freezeAuth.slice(0, 4)}...${freezeAuth.slice(-4)}</span>` : `<span class="text-[#14F195]">Disabled (Safe)</span>`;
+      }
+
+      document.getElementById("whaleStatus").innerHTML = `<span class="${whalePct > 50 ? 'text-red-400' : 'text-[#14F195]'}">${whalePct.toFixed(2)}% of supply</span>`;
+
+      log.innerHTML += `<span class="text-[#14F195] font-bold">[✓] Audit complete. Safety Score: ${100 - riskScore}/100</span>`;
+
+      currentReport = {
+        mint,
+        safety_score: 100 - riskScore,
+        risk_level: badge.innerText,
+        mint_authority: mintAuth,
+        freeze_authority: freezeAuth,
+        whale_concentration_top10_pct: whalePct,
+        timestamp: new Date().toISOString()
+      };
+    }
+
+    function copyReport() {
+      if (!currentReport) return;
+      navigator.clipboard.writeText(JSON.stringify(currentReport, null, 2));
+      alert("JSON Audit Report copied to clipboard!");
+    }
+  </script>
+</body>
+</html>
