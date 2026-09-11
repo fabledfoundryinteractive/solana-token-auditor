@@ -282,6 +282,17 @@
       navigator.clipboard.writeText(JSON.stringify(currentReport, null, 2));
       alert("JSON Audit Report copied to clipboard!");
     }
+
+    // Auto-run audit if mint is provided in URL query string (?mint=...)
+    window.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const mintParam = urlParams.get("mint");
+      if (mintParam) {
+        document.getElementById("mintInput").value = mintParam.trim();
+        runAudit();
+      }
+    });
+
   </script>
 </body>
 </html>
