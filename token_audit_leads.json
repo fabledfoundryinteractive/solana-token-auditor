@@ -1,5 +1,40 @@
 [
   {
+    "mint": "1HQAydhWYYauYZYG9NDsLejMFeQ8L9XvYMfQT8FcNu7",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/KankiAlpha/status/2098294871987736663",
+    "audit": {
+      "mint_address": "1HQAydhWYYauYZYG9NDsLejMFeQ8L9XvYMfQT8FcNu7",
+      "audited_at": "2026-09-11T06:45:30.360352Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=1HQAydhWYYauYZYG9NDsLejMFeQ8L9XvYMfQT8FcNu7",
+    "pitch_copy": "@KankiAlpha \ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=1HQAydhWYYauYZYG9NDsLejMFeQ8L9XvYMfQT8FcNu7\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
     "mint": "7pmwGBu5nu5JX66TVcFfnTFr7XvUpZzdDfNkh9k3pump",
     "score": 100,
     "grade": "A+",
