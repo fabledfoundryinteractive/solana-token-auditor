@@ -1,0 +1,520 @@
+[
+  {
+    "mint": "8RqfJXtattYfPUcgLkx8ra8M3GretDW1h4WAdwKcSTNK",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/CoachPatNFT/status/2098289338295763302",
+    "telegram": null,
+    "website": "https://bitcoinplebs.org/en/",
+    "audit": {
+      "mint_address": "8RqfJXtattYfPUcgLkx8ra8M3GretDW1h4WAdwKcSTNK",
+      "audited_at": "2026-09-11T06:05:24.619434Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=8RqfJXtattYfPUcgLkx8ra8M3GretDW1h4WAdwKcSTNK",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=8RqfJXtattYfPUcgLkx8ra8M3GretDW1h4WAdwKcSTNK\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "HunmXDXMNQYVoDnUL6PNnSYEtFaTZA2WzGh1HJTW7aoV",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/Looptheknots",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "HunmXDXMNQYVoDnUL6PNnSYEtFaTZA2WzGh1HJTW7aoV",
+      "audited_at": "2026-09-11T06:05:25.658695Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=HunmXDXMNQYVoDnUL6PNnSYEtFaTZA2WzGh1HJTW7aoV",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=HunmXDXMNQYVoDnUL6PNnSYEtFaTZA2WzGh1HJTW7aoV\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "4db8YzYumYoBCBnT4qJLXkDyTafwLaWhCki4B4dCTsEj",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/vaz91sol/status/2098287602826608641?s=20",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "4db8YzYumYoBCBnT4qJLXkDyTafwLaWhCki4B4dCTsEj",
+      "audited_at": "2026-09-11T06:05:26.743758Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=4db8YzYumYoBCBnT4qJLXkDyTafwLaWhCki4B4dCTsEj",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=4db8YzYumYoBCBnT4qJLXkDyTafwLaWhCki4B4dCTsEj\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "4JGAe6q4DjJLFrerLufsZ22njUzJXopeWTGEbR5Gpump",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/ZzzzzSol/status/2098284827858313683?s=20",
+    "telegram": null,
+    "website": "https://otcdesks.cash/coin/4JGAe6q4DjJLFrerLufsZ22njUzJXopeWTGEbR5Gpump",
+    "audit": {
+      "mint_address": "4JGAe6q4DjJLFrerLufsZ22njUzJXopeWTGEbR5Gpump",
+      "audited_at": "2026-09-11T06:05:27.739976Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=4JGAe6q4DjJLFrerLufsZ22njUzJXopeWTGEbR5Gpump",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=4JGAe6q4DjJLFrerLufsZ22njUzJXopeWTGEbR5Gpump\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "E7RmfkadtM3PYcZXPJ3oehi2TWqMZWj34XUZ7nG786bg",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/Smelter_Szan/status/2098286626384335258",
+    "telegram": null,
+    "website": "https://equity.guru/2021/03/04/how-to-lose-700k-yoloing-options-on-robinhood-introducing-wallstreetbets-legends-u-1ronyman-u-analfarmer2/",
+    "audit": {
+      "mint_address": "E7RmfkadtM3PYcZXPJ3oehi2TWqMZWj34XUZ7nG786bg",
+      "audited_at": "2026-09-11T06:05:28.761553Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=E7RmfkadtM3PYcZXPJ3oehi2TWqMZWj34XUZ7nG786bg",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=E7RmfkadtM3PYcZXPJ3oehi2TWqMZWj34XUZ7nG786bg\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "3pKBtv6FWHudzxfXiuNjzjtM5qeRme343kqESTPBo6Ld",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/LaunchOnSF/status/2098285685413470230",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "3pKBtv6FWHudzxfXiuNjzjtM5qeRme343kqESTPBo6Ld",
+      "audited_at": "2026-09-11T06:05:29.803728Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=3pKBtv6FWHudzxfXiuNjzjtM5qeRme343kqESTPBo6Ld",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=3pKBtv6FWHudzxfXiuNjzjtM5qeRme343kqESTPBo6Ld\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/raydiumunc?s=11",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg",
+      "audited_at": "2026-09-11T06:05:30.882229Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "FLYKW1XE2nZGYbBrPH5XjMvMwbpyeCMJuADZx3Km6L7",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/DarwinXbt/status/2098279634768978230?s=20",
+    "telegram": null,
+    "website": "https://thedrivingfly.com/#live-auction",
+    "audit": {
+      "mint_address": "FLYKW1XE2nZGYbBrPH5XjMvMwbpyeCMJuADZx3Km6L7",
+      "audited_at": "2026-09-11T06:05:32.238881Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=FLYKW1XE2nZGYbBrPH5XjMvMwbpyeCMJuADZx3Km6L7",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=FLYKW1XE2nZGYbBrPH5XjMvMwbpyeCMJuADZx3Km6L7\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "AopoH5CpGf6xss3V8fqwvF5sJocsBdJvPmZYygrcxP72",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/prottlegang11/status/2098275865574408209",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "AopoH5CpGf6xss3V8fqwvF5sJocsBdJvPmZYygrcxP72",
+      "audited_at": "2026-09-11T06:05:33.318413Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=AopoH5CpGf6xss3V8fqwvF5sJocsBdJvPmZYygrcxP72",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=AopoH5CpGf6xss3V8fqwvF5sJocsBdJvPmZYygrcxP72\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "8tJH2pWSPX9epYQLX634TwzNhRws4Zfx6ggxeCG3gHye",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/HorseFlyonSF",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "8tJH2pWSPX9epYQLX634TwzNhRws4Zfx6ggxeCG3gHye",
+      "audited_at": "2026-09-11T06:05:35.716816Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=8tJH2pWSPX9epYQLX634TwzNhRws4Zfx6ggxeCG3gHye",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=8tJH2pWSPX9epYQLX634TwzNhRws4Zfx6ggxeCG3gHye\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "EPHtWbVJ5qDd1KRu7LYaFVT3wUsX631gga6grtfnpump",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/cryptocraftmine",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "EPHtWbVJ5qDd1KRu7LYaFVT3wUsX631gga6grtfnpump",
+      "audited_at": "2026-09-11T06:05:36.748212Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=EPHtWbVJ5qDd1KRu7LYaFVT3wUsX631gga6grtfnpump",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=EPHtWbVJ5qDd1KRu7LYaFVT3wUsX631gga6grtfnpump\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "CiQVoB7pJhR54vcynWdUHhBjcvJHSRvMCffMgv1amXZT",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/TokenRonger/status/2098268149120483821",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "CiQVoB7pJhR54vcynWdUHhBjcvJHSRvMCffMgv1amXZT",
+      "audited_at": "2026-09-11T06:05:37.808008Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=CiQVoB7pJhR54vcynWdUHhBjcvJHSRvMCffMgv1amXZT",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=CiQVoB7pJhR54vcynWdUHhBjcvJHSRvMCffMgv1amXZT\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "FvCmqaEVQQUA1cxsvCv7qFcMT9zAjrcyuyzE24X5STNK",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/mert/status/1685670080430977026",
+    "telegram": null,
+    "website": null,
+    "audit": {
+      "mint_address": "FvCmqaEVQQUA1cxsvCv7qFcMT9zAjrcyuyzE24X5STNK",
+      "audited_at": "2026-09-11T06:05:38.848634Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=FvCmqaEVQQUA1cxsvCv7qFcMT9zAjrcyuyzE24X5STNK",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=FvCmqaEVQQUA1cxsvCv7qFcMT9zAjrcyuyzE24X5STNK\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  },
+  {
+    "mint": "3j9ftknFs38qmjD3TF8J3nhR66MraZcuyZxXHZ6Zpump",
+    "score": 100,
+    "grade": "A+",
+    "twitter": "https://x.com/discatpumpx",
+    "telegram": null,
+    "website": "https://www.discatsol.site",
+    "audit": {
+      "mint_address": "3j9ftknFs38qmjD3TF8J3nhR66MraZcuyZxXHZ6Zpump",
+      "audited_at": "2026-09-11T06:05:40.273064Z",
+      "safety_score": 100,
+      "safety_grade": "A+",
+      "decimals": 6,
+      "mint_authority": null,
+      "freeze_authority": null,
+      "top_10_holder_percent": 0.0,
+      "findings": [
+        {
+          "severity": "SAFE",
+          "title": "Mint Authority Revoked",
+          "detail": "Fixed token supply guaranteed. No additional tokens can ever be minted."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Freeze Authority Revoked",
+          "detail": "Users cannot be blacklisted or frozen from transferring."
+        },
+        {
+          "severity": "SAFE",
+          "title": "Decentralized Distribution",
+          "detail": "Top 10 holders hold only 0.00% of supply."
+        }
+      ]
+    },
+    "report_url": "https://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=3j9ftknFs38qmjD3TF8J3nhR66MraZcuyZxXHZ6Zpump",
+    "pitch_copy": "\ud83d\udee1\ufe0f Verified Security Audit: Grade A+ (Score 100/100)\n\u2022 Mint Authority: Revoked (Safe)\n\u2022 Freeze Authority: Revoked (Honeypot-Free)\n\nShow traders your token is safe & honeypot-free:\nhttps://fabledfoundryinteractive.github.io/solana-token-auditor/?mint=3j9ftknFs38qmjD3TF8J3nhR66MraZcuyZxXHZ6Zpump\nClaim your Verified Pro Audit Badge on-chain (0.05 SOL)."
+  }
+]
